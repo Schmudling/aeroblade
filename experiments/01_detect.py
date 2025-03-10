@@ -4,11 +4,13 @@ Compute reconstruction distances and detection/attribution results.
 
 import argparse
 from pathlib import Path
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 import pandas as pd
-from aeroblade.evaluation import tpr_at_max_fpr
-from aeroblade.high_level_funcs import compute_distances
-from aeroblade.misc import safe_mkdir, write_config
+from src.aeroblade.evaluation import tpr_at_max_fpr
+from src.aeroblade.high_level_funcs import compute_distances
+from src.aeroblade.misc import safe_mkdir, write_config
 from sklearn.metrics import average_precision_score
 
 
