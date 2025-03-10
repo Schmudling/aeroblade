@@ -6,7 +6,9 @@ import pandas as pd
 import torch
 import torchvision.transforms.v2 as tf
 from tqdm import tqdm
-
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../')))
 from aeroblade.complexities import complexity_from_config
 from aeroblade.data import ImageFolder
 from aeroblade.distances import distance_from_config
