@@ -170,4 +170,4 @@ peft==0.10.0
 
 huggingface-hub==0.25.2
 pyiqa==0.1.10
-!pip install transformers==4.41.0
+transformers==4.41.0
